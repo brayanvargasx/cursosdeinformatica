@@ -1,0 +1,390 @@
+/* Reinicio de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #2a2a2a;
+    line-height: 1.6;
+}
+
+.Valores{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 69, 122, 0.15);
+}
+
+.Valores img {
+    width: 50%;
+    margin: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 69, 122, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Contenedor de cada curso */
+.curso {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 69, 122, 0.15);
+}
+
+/* Estilo para la imagen del curso */
+.curso img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 69, 122, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.curso img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para la descripción del curso */
+.curso .descripcion {
+    width: 60%;
+    color: #2a2a2a;
+}
+
+.curso .descripcion h3 {
+    color: #02457a;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.curso .descripcion p {
+    color: #4a4a4a;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Encabezado y Menú de navegación */
+header {
+    background-color: #02457a;
+    padding: 1em 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #a4d4ff;
+}
+
+.btn-contacto{
+    background-color: #22209b;
+    color: #ffffff;
+    text-decoration: none; /* Quita el subrayado */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+/* Estilos de Secciones */
+section {
+    padding: 2.5em;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 69, 122, 0.15);
+}
+
+/* Secciones específicas */
+#inicio, #nosotros, #oferta, #contacto {
+    padding: 30px;
+}
+
+/* Estilos de Títulos */
+h1, h2 {
+    color: #02457a;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h4 {
+    color: #ffffff;
+}
+
+li {
+    justify-content: left;
+}
+
+p {
+    color: #4a4a4a;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Estilo de imágenes dentro de secciones */
+section img {
+    max-width: 80%; /* Tamaño máximo reducido para una apariencia más compacta */
+    height: auto;
+    border-radius: 10px; /* Bordes suavemente redondeados */
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 69, 122, 0.2); /* Sombra ligera */
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+section img:hover {
+    transform: scale(1.02); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+
+/* Formulario de Contacto */
+.formulario-contacto {
+    display: flex;
+    margin: 2rem auto;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.formulario-contacto label {
+    font-weight: 600;
+    color: #02457a;
+    margin-top: 10px;
+    
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+    width: 100%;
+    gap: 2rem;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #c2e2ff;
+    border-radius: 8px;
+    background-color: #f8fbff;
+    transition: all 0.3s ease;
+
+}
+
+.formulario-contacto input:focus, .formulario-contacto textarea:focus {
+    border-color: #70b7ff;
+    outline: none;
+}
+
+.formulario-contacto button {
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #22209b;
+    transform: scale(1.05);
+}
+
+.btn-contacton, button:hover {
+    transform: scale(1.05);
+}
+
+.info-contacto img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 69, 122, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Información de Contacto */
+.info-contacto {
+    margin-top: 30px;
+    text-align: left;
+    color: #2a2a2a;
+}
+
+.info-contacto p {
+    margin-bottom: 8px;
+}
+
+.info-contacto strong {
+    color: #0284c7;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #02457a;
+    padding: 1em;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+.menu-checkbox {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 1em;
+    z-index: 1001; /* Para que esté sobre el menú */
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Ajusta según la altura del header */
+        left: 0;
+        width: 100%;
+        background-color: #02457a;
+        padding: 1em 0;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        font-size: 1.5em;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Mostrar menú cuando el checkbox está activo */
+    .menu-checkbox:checked + .menu-icon + .menu {
+        display: flex;
+    }
+    /* Ajustamos la sección para que no esté tan comprimida en pantallas pequeñas */
+    section {
+        padding: 1 em;
+        margin: 10px;
+    }
+
+    /* Ajuste para las imágenes dentro de cada sección */
+    section img {
+        max-width: 100%; /* Se asegura de que la imagen ocupe todo el ancho disponible */
+        height: auto;
+    }
+
+    /* Ajuste de las imágenes en el contenedor de "Valores" y "Curso" */
+    .Valores, .curso {
+        flex-direction: column; /* Cambia a dirección de columna para que se alineen verticalmente */
+        align-items: center;
+    }
+
+    .Valores img, .curso img {
+        width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+        margin-bottom: 1rem; /* Espacio debajo de la imagen para separarla del texto */
+    }
+
+    /* Ajuste de imágenes en la sección de contacto */
+    .info-contacto img {
+        width: 80%; /* Tamaño más grande en móviles */
+    }
+
+    /* Centrado del texto y ajustes adicionales */
+    .info-contacto {
+        text-align: center;
+    }
+
+    /* Otros ajustes en el formulario */
+    .formulario-contacto label {
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .map-responsive {
+        position: relative;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #f0f8ff;
+    }
+    
+    .map-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
